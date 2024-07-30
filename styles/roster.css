@@ -1,0 +1,112 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Tamna crna pozadina */
+    color: #e0e0e0; /* Svijetlo sivi tekst za bolji kontrast */
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #e0e0e0; /* Svijetlo sivi tekst */
+}
+
+a {
+    color: #4caf50; /* Lijepa zelena */
+    text-decoration: none;
+}
+
+a:hover {
+    color: #388e3c; /* Tamnija zelena */
+}
+
+header {
+    background-color: #1d1d1d; /* Tamna crna */
+    color: #e0e0e0; /* Svijetlo sivi tekst */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    border-bottom: 1px solid #4caf50; /* Tamna crna */
+    height: 250px;
+}
+header h1 {
+    color: #4caf50;
+    line-height: 150px;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.player-card {
+    background-color: #1e1e1e; /* Tamna crna */
+    border: 1px solid #4caf50; /* Tamna crna */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Tamna sjena za bolje isticanje */
+}
+
+.player-card img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.player-card h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #e0e0e0; /* Svijetlo sivi tekst */
+}
+
+.player-card p {
+    font-family: 'Roboto', sans-serif;
+    color: #b0b0b0; /* Svijetlo siva za tekst */
+}
+
+footer {
+    height: 100px;
+    border-top: 1px solid #333333; /* Tamno siva boja za obrub footer-a */
+}
+
+footer p {
+    text-align: center;
+    line-height: 100px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        font-size: 1.5em;
+        height: 130px;
+    }
+    header h1{
+        line-height: 90px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .player-card {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+
+    main {
+        padding: 5px;
+    }
+
+    .player-card {
+        max-width: 100%;
+    }
+}

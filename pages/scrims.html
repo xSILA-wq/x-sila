@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scrims</title>
+    <link rel="icon" type="image/x-icon" href="../img/logo.png">
+    <link rel="stylesheet" href="../styles/scrims.css">
+</head>
+<body>
+    <header>
+        <h1>xSILA Standoff 2</h1>
+    </header>
+    <section class="scrim-info">
+        <h2 style="margin-top: 50px;margin-bottom: 30px;padding-left: 20px;">Scrims results:</h2>
+        <div id="scrim-container">
+            <!-- Scrim boxovi će biti dodani ovdje -->
+        </div>
+    </section>
+
+    <section class="scrim-form">
+        <h2 style="margin-top: 150px;">Add New Scrim</h2>
+        <form id="scrim-form">
+            <label for="team1" style="margin-top: 5px;">Team 1:</label>
+            <input type="text" id="team1" name="team1" required>
+            <label for="team2">Team 2:</label>
+            <input type="text" id="team2" name="team2" required>
+            <label for="format">Format:</label>
+            <input type="text" id="format" name="format" required>
+            <label for="match">Match:</label>
+            <input type="text" id="match" name="match" required>
+            <label for="region">Region:</label>
+            <input type="text" id="region" name="region" required>
+            <label for="mode">Mode:</label>
+            <input type="text" id="mode" name="mode" required>
+            <label for="result">Result:</label>
+            <input type="text" id="result" name="result" required>
+            <label for="wins">Wins:</label>
+            <input type="number" id="wins" name="wins" required>
+            <label for="losses">Losses:</label>
+            <input type="number" id="losses" name="losses" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="button" onclick="addScrim()" style="margin-bottom: 100px; width: 300px;">Add Scrim</button>
+        </form>
+    </section>
+
+   
+
+    <footer>
+        <p>Follow our achievements and activities.</p>
+    </footer>
+    <script src="../js/scrims.js"></script>
+</body>
+</html>

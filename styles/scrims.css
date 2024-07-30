@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Tamna crna pozadina */
+    color: #e0e0e0; /* Svijetlo sivi tekst */
+}
+
+header {
+    background-color: #1e1e1e; /* Tamna crna pozadina za header */
+    color: #e0e0e0; /* Svijetlo sivi tekst */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    border-bottom: 1px solid #4caf50; /* Tamno siva boja za obrub */
+    height: 250px;
+}
+
+header h1 {
+    line-height: 250px;
+    color: #4caf50;
+}
+
+.scrim-info h2, .scrim-form h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #4caf50; /* Lijepa zelena za naslove */
+}
+
+.scrim-box {
+    border: 1px solid #4caf50; /* Zelena boja za obrub */
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #1e1e1e; /* Tamna crna pozadina */
+    width: 50%;
+}
+
+.scrim-box h3 {
+    font-size: 40px;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #4caf50; /* Zelena boja za naslove unutar boxa */
+}
+
+#scrim-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.scrim-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.scrim-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.scrim-form label {
+    margin: 5px 0;
+}
+
+.scrim-form input {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #fff; /* Zelena boja za obrub inputa */
+    border-radius: 4px;
+    width: 50%;
+}
+
+button {
+    padding: 10px;
+    background-color: #4caf50; /* Zelena boja za dugme */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #388e3c; /* Tamnija zelena za hover efekat */
+}
+
+footer {
+    height: 100px;
+    border-top: 1px solid #333333; /* Tamno siva boja za obrub footer-a */
+}
+
+footer p {
+    text-align: center;
+    line-height: 100px;
+}
+
+.red,
+.red1 {
+    color: #f44336; /* Crvena boja za oznaku greške */
+}
+
+.green {
+    color: #4caf50; /* Zelena boja za uspjeh */
+}
+
+.win, .lose {
+    text-indent: 20px;
+}
+
+@media (max-width: 768px) {
+    .scrim-box h3 {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    header h1 {
+        font-size: 40px;
+        line-height: 130px;
+    }
+    header{
+        height: 130px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+
+    .scrim-box h3 {
+        font-size: 18px;
+    }
+}
